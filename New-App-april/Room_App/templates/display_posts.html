@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      <br><br><h2>Summary  discussion</h2>
+     
+
+    {% for row in posts %}
+     
+          <b>{{ row.n.major_premise }}</b>
+          {% if request.path == "/" %}
+    	by <a href="{{ url_for('profile', username=row.n.username) }}">{{ row.username }}</a>
+        {% endif %}
+    	
+
+     
+          
+          <a href="{{ url_for('like_argument_5', argument_id=row.n.id) }}">5<a href="#">
+              <span class="glyphicon glyphicon-star"></span>
+            </a></a>
+       
+         <a href="{{ url_for('like_argument_4', argument_id=row.n.id) }}">4<a href="#">
+            <span class="glyphicon glyphicon-star"></span>
+          </a></a>
+         <a href="{{ url_for('like_argument_3', argument_id=row.n.id) }}">3<a href="#">
+            <span class="glyphicon glyphicon-star"></span>
+          </a></a>
+         <a href="{{ url_for('like_argument_2', argument_id=row.n.id) }}">2<a href="#">
+            <span class="glyphicon glyphicon-star"></span>
+          </a></a>
+         <a href="{{ url_for('like_argument_1', argument_id=row.n.id) }}">1<a href="#">
+            <span class="glyphicon glyphicon-star"></span>
+          </a></a>
+          <br>
+          
+        
+          <a href="{{ url_for('like_argument', argument_id=row.n.id) }}"> <p style="color:red;">Disagree</p></a>
+        
+    {% endfor %}
+    
+  
+   
+    
+    {% endblock %}
+    
+            

@@ -1,0 +1,183 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+                <form action="{{ url_for('add_table_4') }}" method="post">
+<br>
+<br>
+<br>
+
+        <h4>Changing toothbrushes: Sometimes </h4>
+       
+    </div>
+
+    <table class="blueTable">
+            <thead>
+            <tr>
+            <th>Statements</th>
+            <th>Ratings</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+          <td>
+        Be sure to change your brush regularly for maximum effectiveness and to practice diligent hygiene because toothbrush bristles do not kill bacteria in the mouth, protect you against disease or prevent you from getting sick. 
+         </td>
+         <td>  <div class="form-group ">
+                        <label class="control-label " for="select">
+                                
+                    
+                        <select class="select form-control" id="sq_1" name="sq_1"required>
+                         <option value="1">
+                        1
+                         </option>
+                         <option value="2">
+                        2
+                         </option>
+                         <option value="3">
+                        3
+                        </option>
+                        <option value="4">
+                        4
+                        </option>
+                        <option value="5">
+                        5
+                        </option></td>
+            </tr>
+            <tr>
+            <td>
+            Many dental professionals recommend changing your toothbrush about every three months, and the American Dental Association (ADA) recommends that you replace your toothbrush approximately every three to four months, or sooner if the bristles are frayed.
+
+          <td>
+                    <div class="form-group ">
+                            <label class="control-label " for="select">
+                                    
+                        
+                            <select class="select form-control" id="sq_2" name="sq_2"required>
+                             <option value="1">
+                            1
+                             </option>
+                             <option value="2">
+                            2
+                             </option>
+                             <option value="3">
+                            3
+                            </option>
+                            <option value="4">
+                            4
+                            </option>
+                            <option value="5">
+                            5
+                            </option>
+            </td>
+            </tr>
+            <tr>
+            <td>
+             The same way food can make your breath smell bad, that same food can end up on your toothbrush and cause it to smell bad as well. ... If your toothbrush is stinky, throw it out. Get a new one
+            </td>
+            <td> <div class="form-group ">
+                    <label class="control-label " for="select">
+                            
+                
+                    <select class="select form-control" id="sq_3" name="sq_3"required>
+                     <option value="1">
+                    1
+                     </option>
+                     <option value="2">
+                    2
+                     </option>
+                     <option value="3">
+                    3
+                    </option>
+                    <option value="4">
+                    4
+                    </option>
+                    <option value="5">
+                    5
+                    </option>
+
+            </td>
+            </tr>
+            <tr>
+            <td>
+         Studies show that after three months of normal wear and tear, toothbrushes are much less effective at removing plaque from teeth and gums compared to new ones.
+         </td>
+            <td> <div class="form-group ">
+                    <label class="control-label " for="select">
+                            
+                
+                    <select class="select form-control" id="sq_4" name="sq_4"required>
+                     <option value="1">
+                    1
+                     </option>
+                     <option value="2">
+                    2
+                     </option>
+                     <option value="3">
+                    3
+                    </option>
+                    <option value="4">
+                    4
+                    </option>
+                    <option value="5">
+                    5
+                    </option></td>
+            </tr>
+            <tr>
+            <td>If you're emotionally attached to your old brush, you can always use it around the house to clean other, non-teeth items
+         </td>
+            <td>
+                    <div class="form-group ">
+                            <label class="control-label " for="select">
+                                    
+                        
+                            <select class="select form-control" id="sq_5" name="sq_5"required>
+                             <option value="1">
+                            1
+                             </option>
+                             <option value="2">
+                            2
+                             </option>
+                             <option value="3">
+                            3
+                            </option>
+                            <option value="4">
+                            4
+                            </option>
+                            <option value="5">
+                            5
+                            </option>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            <footer>
+                        <div class="form-group">
+                          <div>
+                           <button class="btn btn-primary " name="submit" type="submit">
+                            SAVE
+                           </button>
+                          </div>
+                         </div>
+                        </form>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    </div>
+                      </footer>
+            <A HREF="javascript:javascript:history.go(-1)">Click here to go back to previous page</A>
+
+
+
+
+
+
+
+
+
+
+
+{%endblock%}

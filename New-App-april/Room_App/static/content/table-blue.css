@@ -1,0 +1,40 @@
+table.blueTable {
+    width: 90%;
+    text-align: left;
+  }
+  table.blueTable td, table.blueTable th {
+    border: 0px solid #AAAAAA;
+    padding: 10px 10px;
+  }
+  table.blueTable tbody td {
+    font-size: 13px;
+    color: #300D33;
+  }
+  table.blueTable tr:nth-child(even) {
+    background: #D0E4F5;
+  }
+  table.blueTable thead {
+    background: #FAFAFC;
+    border-bottom: 0px solid #444444;
+  }
+  table.blueTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    border-left: 0px solid #D0E4F5;
+  }
+  table.blueTable thead th:first-child {
+    border-left: none;
+  }
+  
+  table.blueTable tfoot {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #D0E4F5;
+    background: -moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  }
+  table.blueTable tfoot td {
+    font-size: 14px;
+  }

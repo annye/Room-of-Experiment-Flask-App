@@ -1,0 +1,17 @@
+.cards {
+  margin: 0 -10px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  /*flex-direction: column;*/
+}
+.cards li {
+  background-color: #e5dbff;
+  border: 1px solid #d0bfff;
+  margin: 0 10px 20px 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.cards li:first-child {
+  /*flex-shrink: 2;*/
+}

@@ -1,0 +1,253 @@
+
+
+{% extends "layout.html" %}
+{% block content %}
+<br>
+<br>
+
+{% if session.username %}
+
+<div class="wrapper">
+<form action="{{ url_for('add_sensory') }}" method="post">
+
+      <div class="inner">
+         
+        
+      </div>
+    </header>
+    <br>
+<br>
+<br>
+<br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br> 
+    <div class="example">
+      <ul class="cards">
+          <br>
+          <br>
+          
+          <li>
+              
+              <div class="form-group ">
+                  <label class="control-label ">
+                    <br>
+                   <align=left>I base my decisions on whether:
+                  </label>
+                  <div class="">
+                   <div class="radio">
+                    <label class="radio">
+                     <input name="s1" type="radio" value="It feels right."/>
+                     It feels right.
+                    </label>
+                   </div>
+                   <div class="radio">
+                    <label class="radio">
+                     <input name="s1" type="radio" value="The data makes sense."/>
+                     The data makes sense.
+                    </label>
+                   </div>
+                   <div class="radio">
+                    <label class="radio">
+                     <input name="s1" type="radio" value="It looks the best"/>
+                     It looks the best
+                    </label>
+                   </div>
+                   <div class="radio">
+                    <label class="radio">
+                     <input name="s1" type="radio" value="The options that sound the nest"/>
+                     The options that sound the nest
+                    </label>
+                   </div>
+                   <div class="radio">
+                    <label class="radio">
+                     <input name="s1" type="radio" value="Following my gut feelings"/>
+                     Following my gut feelings
+                    </label>
+                   </div>
+                  </div>
+                 </div>
+                 <br>
+                 <div class="form-group ">
+                  <label class="control-label ">
+                   If I have a disagreement, I&rsquo;m most influenced by:
+                  </label>
+                  <div class="">
+                   <div class="radio">
+                    <label class="radio">
+                     <input name="s3" type="radio" value=" How that person looks at me"/>
+                     How that person looks at me
+                    </label>
+                   </div>
+                   <div class="radio">
+                    <label class="radio">
+                     <input name="s3" type="radio" value="Connecting with that person&rsquo;s feelings"/>
+                     Connecting with that person&rsquo;s feelings
+                    </label>
+                   </div>
+                   <div class="radio">
+                    <label class="radio">
+                     <input name="s3" type="radio" value="The tone of their voice."/>
+                     The tone of their voice.
+                    </label>
+                   </div>
+                  </div>
+                 </div>
+            </li>
+
+      
+        <li>
+            <div class="form-group ">
+                <label class="control-label ">
+                  <br>
+                 I enjoy the most
+                </label>
+                <div class="">
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="s4" type="radio" value="Listening to new and old music."/>
+                   Listening to new and old music.
+                  </label>
+                 </div>
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="s4" type="radio" value="Watching the colours of the sunset."/>
+                   Watching the colours of the sunset.
+                  </label>
+                 </div>
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="s4" type="radio" value="Feeling warm on a chilly evening."/>
+                   Feeling warm on a chilly evening.
+                  </label>
+                 </div>
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="s4" type="radio" value="Making sense of facts and figures."/>
+                   Making sense of facts and figures.
+                  </label>
+                 </div>
+                </div>
+               </div>
+               <div class="form-group ">
+                <label class="control-label ">
+                  <br>
+                 People know when I&rsquo;m having a good or bad day by:
+                </label>
+                <div class="">
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="s5" type="radio" value="The tone of my voice"/>
+                   The tone of my voice
+                  </label>
+                 </div>
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="s5" type="radio" value="The thoughts and feelings I share"/>
+                   The thoughts and feelings I share
+                  </label>
+                 </div>
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="s5" type="radio" value="The way I dress and look"/>
+                   The way I dress and look
+                  </label>
+                 </div>
+                </div>
+               </div>
+        <li>
+         
+       <br>
+       <div class="form-group ">
+          <label class="control-label ">
+           I am more likely to:
+          </label>
+          <div class="">
+           <div class="radio">
+            <label class="radio">
+             <input name="s6" type="radio" value="Want understanding of the facts you tell me. "/>
+             Want understanding of the facts you tell me.
+            </label>
+           </div>
+           <div class="radio">
+            <label class="radio">
+             <input name="s6" type="radio" value="Picture the overview or plan."/>
+             Picture the overview or plan.
+            </label>
+           </div>
+           <div class="radio">
+            <label class="radio">
+             <input name="s6" type="radio" value="Sequence the information you give me to make sense of it all."/>
+             Sequence the information you give me to make sense of it all.
+            </label>
+           </div>
+           <div class="radio">
+            <label class="radio">
+             <input name="s6" type="radio" value="Get a handle on the feeling of the project."/>
+             Get a handle on the feeling of the project.
+            </label>
+           </div>
+          </div>
+         </div>
+
+            <div class="form-group ">
+                <label class="control-label ">
+                  <br>
+                 I&rsquo;m very aware of:
+                </label>
+                <div class="">
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="s2" type="radio" value="The sounds and noises around me"/>
+                   The sounds and noises around me
+                  </label>
+                 </div>
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="s2" type="radio" value="The colours and shapes in my surrounding"/>
+                   The colours and shapes in my surrounding
+                  </label>
+                 </div>
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="s2" type="radio" value="The touch of different clothes on my body"/>
+                   The touch of different clothes on my body
+                  </label>
+                 </div>
+                </div>
+               </div>
+        </li>
+
+
+        
+      </ul>
+     
+    </div>
+  </body>
+</html>
+
+    
+<footer>
+    <div class="form-group">
+      <div>
+       <button class="btn btn-primary " name="submit" type="submit">
+        SAVE
+       </button>
+      </div>
+     </div>
+    </form>
+   </div>
+  </div>
+ </div>
+</div>
+</div>
+  </footer>
+
+
+{% endif%}
+      
+      
+      {% endblock %}
+      

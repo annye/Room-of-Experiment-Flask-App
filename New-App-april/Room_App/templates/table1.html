@@ -1,0 +1,180 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+<br>
+<br>
+<br>
+<div class="wrapper">
+                <form action="{{ url_for('add_table_1') }}" method="post">
+        <h4>Check-ups: Hardly ever</h4>
+       
+    </div>
+
+    <table class="blueTable">
+            <thead>
+            <tr>
+            <th>Statements</th>
+            <th>Ratings</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>Even if you take excellent care of your teeth and gums at home, you still need to see a dentist regularly because your dentist can check for problems that you may not see or feel. Many dental problems don't become visible or cause pain until they are in more advanced stages</td>
+            <td>
+                    <div class="form-group ">
+                            <label class="control-label " for="select">
+                                    
+                        
+                            <select class="select form-control" id="rates1" name="rates1"required>
+                             <option value="1">
+                            1
+                             </option>
+                             <option value="2">
+                            2
+                             </option>
+                             <option value="3">
+                            3
+                            </option>
+                            <option value="4">
+                            4
+                            </option>
+                            <option value="5">
+                            5
+                            </option>
+                                      
+                                      
+            </td>
+            </tr>
+            <tr>
+            <td>It is important to care about your dental health and do the regular check-ups because poor dental health is linked to gum disease - The same bacteria found in the mouth have also been found in the hearts of people with coronary disease.</td>
+            <td>
+                    <div class="form-group ">
+                            <label class="control-label " for="select">
+                                    
+                        
+                            <select class="select form-control" id="rates2" name="rates2"required>
+                             <option value="1">
+                            1
+                             </option>
+                             <option value="2">
+                            2
+                             </option>
+                             <option value="3">
+                            3
+                            </option>
+                            <option value="4">
+                            4
+                            </option>
+                            <option value="5">
+                            5
+                            </option>
+            </td>
+            </tr>
+            <tr>
+            <td>If you wish to keep your original smile and natural teeth you must visit a dentist for a regular check-up.</td>
+            <td> <div class="form-group ">
+                    <label class="control-label " for="select">
+                            
+                
+                    <select class="select form-control" id="rates3" name="rates3"required>
+                     <option value="1">
+                    1
+                     </option>
+                     <option value="2">
+                    2
+                     </option>
+                     <option value="3">
+                    3
+                    </option>
+                    <option value="4">
+                    4
+                    </option>
+                    <option value="5">
+                    5
+                    </option>
+
+            </td>
+            </tr>
+            <tr>
+            <td>It is advisable to regularly visit your dentist because early detection of dental issues can save money on avoiding major problems</td>
+            <td> <div class="form-group ">
+                    <label class="control-label " for="select">
+                            
+                
+                    <select class="select form-control" id="rates4" name="rates4"required>
+                     <option value="1">
+                    1
+                     </option>
+                     <option value="2">
+                    2
+                     </option>
+                     <option value="3">
+                    3
+                    </option>
+                    <option value="4">
+                    4
+                    </option>
+                    <option value="5">
+                    5
+                    </option></td>
+            </tr>
+            <tr>
+            <td>Visiting the dentist regularly is crucial in providing rapid diagnosis and treatment to prevent both children and adults from being hospitalised due to tooth decay.</td>
+            <td>
+                    <div class="form-group ">
+                            <label class="control-label " for="select">
+                                    
+                        
+                            <select class="select form-control" id="rates5" name="rates5"required>
+                             <option value="1">
+                            1
+                             </option>
+                             <option value="2">
+                            2
+                             </option>
+                             <option value="3">
+                            3
+                            </option>
+                            <option value="4">
+                            4
+                            </option>
+                            <option value="5">
+                            5
+                            </option>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            <footer>
+                        <div class="form-group">
+                          <div>
+                           <button class="btn btn-primary " name="submit" type="submit">
+                            SAVE
+                           </button>
+                          </div>
+                         </div>
+                        </form>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    </div>
+                      </footer>
+                    
+            <A HREF="javascript:javascript:history.go(-1)">Click here to go back to previous page</A>
+
+
+
+
+
+
+
+
+
+
+
+
+            {% endblock %}

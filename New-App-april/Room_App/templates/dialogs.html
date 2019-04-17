@@ -1,0 +1,96 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<link rel="stylesheet" type="text/css" href="/static/content/banner.css" />
+
+        <h4>Two people are talking about dentists, what fo you think?</h4>
+       
+        <br>
+        <br>
+        
+    </div>
+
+  
+ 
+<div class="container">
+    {% for value in range_posts %} 
+        <div class="row">
+            
+            <div class="col-md-6">
+                <div class="dialogbox">
+                    <div class="body">
+                         <span class="tip tip-right"></span>
+                         <div class="message">
+                                <span>{{posts[value].n.argu}}</span>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="dialogbox" style="padding-top: 20px;">
+                    <div class="body">
+                          <span class="tip tip-left"></span>
+                          <div class="message">
+                                <span>{{posts[value].n.major_premise}}</span>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+{% endfor %}
+<ul class="pager">
+    <div class="row">
+        <div class="col-md-6">
+            <li class="previous"><a href="{{ url_for('dialogs')}}">Previous</a></li>
+        </div>
+  
+        <div class="col-md-6">
+            <li class="previous"><a href="{{ url_for('dialogs')}}">Next</a></li>
+  </ul>
+</div>
+<div class="row"></div>
+{% include "display_posts.html" %}
+
+
+<div class="row">
+   
+       
+  
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  
+           
+            
+            </li> 
+    
+          </div>
+            
+
+          <A HREF="javascript:javascript:history.go(-1)">Click here to go back to previous page</A>
+
+               
+
+              
+   
+
+
+{% endblock%}

@@ -1,0 +1,569 @@
+{% extends "layout.html" %}
+{% block content %}
+<br>
+<br>
+<link rel="stylesheet" type="text/css" href="/static/content/3.layo.css" />
+  
+<div class="wrap">
+           
+<form action="{{ url_for('add_oral_q') }}" method="post">
+<br>
+                                                      <br>
+                                                      <br>
+                                                      <br>
+                                                      <br>
+                                                      <br>
+                                                      <br>
+                                                      <br>
+                                                      <h4 class="likert-header">Please answer the following questions:</h4>
+
+   <!-- Grid column 1-->
+   <div class="col-md-3" style="background-color:#abbfe7">
+        <br>
+
+
+        <div class="form-group ">
+                <label class="control-label " for="q_1">
+                 Do you smoke?
+                </label>
+                <select class="select form-control" id="q_1" name="q_1">
+                 <option value="Yes">
+                  Yes
+                 </option>
+                 <option value="No">
+                  No
+                 </option>
+                 <option value="Already quit">
+                  Already quit
+                 </option>
+                </select>
+               </div>
+               <div class="form-group ">
+                <label class="control-label " for="q_2">
+                 Is your overall health good?
+                </label>
+                <select class="select form-control" id="q_2" name="q_2">
+                 <option value="Very Good">
+                  Very Good
+                 </option>
+                 <option value="Good">
+                  Good
+                 </option>
+                 <option value="I am often sick">
+                  I am often sick
+                 </option>
+                 <option value="I have a condition">
+                  I have a condition
+                 </option>
+                 <option selected="selected" value="">
+                 </option>
+                </select>
+               </div>
+               <div class="form-group ">
+                <label class="control-label " for="q_3">
+                 Do you eat a well-balanced diet, including food from all food groups, and limit sweets and sticky foods?
+                </label>
+                <select class="select form-control" id="q_3" name="q_3">
+                 <option value="Yes">
+                  Yes
+                 </option>
+                 <option value="No">
+                  No
+                 </option>
+                 <option value="Maybe">
+                  Maybe
+                 </option>
+                </select>
+               </div>
+               <div class="form-group ">
+                <label class="control-label " for="q_4">
+                 Do you have a history of cavities or gum disease?
+                </label>
+                <select class="select form-control" id="q_4" name="q_4">
+                 <option value="Yes">
+                  Yes
+                 </option>
+                 <option value="No">
+                  No
+                 </option>
+                </select>
+               </div>
+               <div class="form-group ">
+                <label class="control-label " for="q_5">
+                 Do you use mouthwash and floss your teeth every day?
+                </label>
+                <select class="select form-control" id="q_5" name="q_5">
+                 <option value="Yes">
+                  Yes
+                 </option>
+                 <option value="No">
+                  No
+                 </option>
+                 <option value="Sometimes">
+                  Sometimes
+                 </option>
+                </select>
+               </div>
+               <div class="form-group ">
+                <label class="control-label " for="q_6">
+                 How often do you brush your teeth?
+                </label>
+                <select class="select form-control" id="q_6" name="q_6">
+                 <option value="Brushing one a day">
+                  Brushing one a day
+                 </option>
+                 <option value="Brushing at least twice a day">
+                  Brushing at least twice a day
+                 </option>
+                 <option value="Seldom or no brushing">
+                  Seldom or no brushing
+                 </option>
+                </select>
+               </div>
+               <div class="form-group ">
+                <label class="control-label " for="q_7">
+                 Time since the last visit to the dentist?
+                </label>
+                <select class="select form-control" id="q_7" name="q_7">
+                 <option value="Less than a year">
+                  Less than a year
+                 </option>
+                 <option value="2 or 5 years ago">
+                  2 or 5 years ago
+                 </option>
+                 <option value="More than 5 years">
+                  More than 5 years
+                 </option>
+                 <option value="I don't remember">
+                  I don't remember
+                 </option>
+                 <option value="Never seen a dentist">
+                  Never seen a dentist
+                 </option>
+                </select>
+               </div>
+            
+
+      </div>
+
+
+   <!-- Grid column 2-->
+   <div class="col-md-3" style="background-color:#fafaff">
+        <br>
+
+        <div class="form-group ">
+                <label class="control-label ">
+                 The main reasons for do not brush teeth
+                </label>
+                <div class=" ">
+                 <div class="checkbox">
+                  <label class="checkbox">
+                   <input name="q_8" type="checkbox" value="Too much bother"/>
+                   Too much bother
+                  </label>
+                 </div>
+                 <div class="checkbox">
+                  <label class="checkbox">
+                   <input name="q_8" type="checkbox" value="No time for brushing"/>
+                   No time for brushing
+                  </label>
+                 </div>
+                 <div class="checkbox">
+                  <label class="checkbox">
+                   <input name="q_8" type="checkbox" value="Teeth are not dirty"/>
+                   Teeth are not dirty
+                  </label>
+                 </div>
+                 <div class="checkbox">
+                  <label class="checkbox">
+                   <input name="q_8" type="checkbox" value="No such habit from childhood"/>
+                   No such habit from childhood
+                  </label>
+                 </div>
+                 <div class="checkbox">
+                  <label class="checkbox">
+                   <input name="q_8" type="checkbox" value="Too tired"/>
+                   Too tired
+                  </label>
+                 </div>
+                 <div class="checkbox">
+                  <label class="checkbox">
+                   <input name="q_8" type="checkbox" value="Sometimes I forget"/>
+                   Sometimes I forget
+                  </label>
+                 </div>
+                 <span class="help-block" id="hint_q_16">
+                  Check all that apply
+                 </span>
+                </div>
+               </div>
+               <div class="form-group ">
+                <label class="control-label ">
+                 The occasion of tooth brushing 
+          Check all that apply
+                </label>
+                <div class=" ">
+                 <div class="checkbox">
+                  <label class="checkbox">
+                   <input name="q_9" type="checkbox" value="In the morning"/>
+                   In the morning
+                  </label>
+                 </div>
+                 <div class="checkbox">
+                  <label class="checkbox">
+                   <input name="q_9" type="checkbox" value="In the evening"/>
+                   In the evening
+                  </label>
+                 </div>
+                 <div class="checkbox">
+                  <label class="checkbox">
+                   <input name="q_9" type="checkbox" value="After meals"/>
+                   After meals
+                  </label>
+                 </div>
+                 <div class="checkbox">
+                  <label class="checkbox">
+                   <input name="q_9" type="checkbox" value="Sometimes before bed"/>
+                   Sometimes before bed
+                  </label>
+                 </div>
+                 <div class="checkbox"> 
+                  <label class="checkbox">
+                   <input name="q_9" type="checkbox" value="Always before bed"/>
+                   Always before bed
+                  </label>
+                 </div>
+                 <span class="help-block" id="hint_q_9">
+                  Check all that apply
+                 </span>
+                </div>
+               </div>
+               <div class="form-group ">
+                <label class="control-label ">
+                 If gums are bleeding what do you do
+                </label>
+                <div class=" ">
+                 <div class="checkbox">
+                  <label class="checkbox">
+                   <input name="q_100" type="checkbox" value="Go to see the dentist"/>
+                   Go to see the dentist
+                  </label>
+                 </div>
+                 <div class="checkbox">
+                  <label class="checkbox">
+                   <input name="q_100" type="checkbox" value="Ignore bleeding"/>
+                   Ignore bleeding
+                  </label>
+                 </div>
+                 <div class="checkbox">
+                  <label class="checkbox">
+                   <input name="q_100" type="checkbox" value="Never had this problem"/>
+                   Never had this problem
+                  </label>
+                 </div>
+                 <div class="checkbox">
+                  <label class="checkbox">
+                   <input name="q_100" type="checkbox" value="Don't know what to do"/>
+                   Don't know what to do
+                  </label>
+                 </div>
+                 <div class="checkbox">
+                  <label class="checkbox">
+                   <input name="q_100" type="checkbox" value="Stop brushing"/>
+                   Stop brushing
+                  </label>
+                 </div>
+                 <span class="help-block" id="hint_q_100">
+                  Check all that apply
+                 </span>
+                </div>
+               </div>
+               
+
+
+
+
+        
+
+</div>
+   <!-- Grid column -->
+   <div class="col-md-3" style="background-color:#abbfe7">
+        <br>
+
+
+        <div class="form-group ">
+                <label class="control-label ">
+                 You&rsquo;ll eventually lose all of your teeth.
+                </label>
+                <div class="">
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="q_10" type="radio" value="Agree"/>
+                   Agree
+                  </label>
+                 </div>
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="q_10" type="radio" value="Disagree"/>
+                   Disagree
+                  </label>
+                 </div>
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="q_10" type="radio" value="Maybe"/>
+                   Maybe
+                  </label>
+                 </div>
+                </div>
+               </div>
+               <div class="form-group ">
+                <label class="control-label ">
+                 Chewing a sugarless gum does well as brushing your teeth
+                </label>
+                <div class="">
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="q_11" type="radio" value="Agree"/>
+                   Agree
+                  </label>
+                 </div>
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="q_11" type="radio" value="Disagree"/>
+                   Disagree
+                  </label>
+                 </div>
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="q_11" type="radio" value="Maybe"/>
+                   Maybe
+                  </label>
+                 </div>
+                </div>
+               </div>
+               <div class="form-group ">
+                <label class="control-label ">
+                 Dental Problems Stay in the Mouth
+                </label>
+                <div class="">
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="q_12" type="radio" value="Agree"/>
+                   Agree
+                  </label>
+                 </div>
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="q_12" type="radio" value="Disagree"/>
+                   Disagree
+                  </label>
+                 </div>
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="q_12" type="radio" value="Maybe"/>
+                   Maybe
+                  </label>
+                 </div>
+                </div>
+               </div>
+               <div class="form-group ">
+                <label class="control-label ">
+                 The More Sugar You Eat, The Worse It is For Your Teeth
+                </label>
+                <div class="">
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="q_13" type="radio" value="Agree"/>
+                   Agree
+                  </label>
+                 </div>
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="q_13" type="radio" value="Disagree"/>
+                   Disagree
+                  </label>
+                 </div>
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="q_13" type="radio" value="Maybe"/>
+                   Maybe
+                  </label>
+                 </div>
+                </div>
+               </div>
+               <div class="form-group ">
+                <label class="control-label ">
+                 Tooth decay is mainly caused by sugar
+                </label>
+                <div class="">
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="q_14" type="radio" value="Agree"/>
+                   Agree
+                  </label>
+                 </div>
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="q_14" type="radio" value="Disagree"/>
+                   Disagree
+                  </label>
+                 </div>
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="q_14" type="radio" value="Maybe"/>
+                   Maybe
+                  </label>
+                 </div>
+                </div>
+               </div>
+               <div class="form-group ">
+                <label class="control-label ">
+                 Protecting teeth by simply brushing is enough
+                </label>
+                <div class="">
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="q_15" type="radio" value="Agree"/>
+                   Agree
+                  </label>
+                 </div>
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="q_15" type="radio" value="Disagree"/>
+                   Disagree
+                  </label>
+                 </div>
+                 <div class="radio">
+                  <label class="radio">
+                   <input name="q_15" type="radio" value="Maybe"/>
+                   Maybe
+                  </label>
+                 </div>
+                </div>
+               </div>
+
+
+
+
+        
+      </div>
+    </div>  
+
+
+<!-- Grid column -->
+<div class="col-md-3" style="background-color:#fafaff">
+    
+<br>
+<div class="form-group ">
+        <label class="control-label ">
+         If having signs of tooth decay what do you do?
+        </label>
+        <div class=" ">
+         <div class="checkbox">
+          <label class="checkbox">
+           <input name="q_19" type="checkbox" value="Don't care if don't pain"/>
+           Don't care if don't pain
+          </label>
+         </div>
+         <div class="checkbox">
+          <label class="checkbox">
+           <input name="q_19" type="checkbox" value="Go and see a dentist only when in pain"/>
+           Go and see a dentist only when in pain
+          </label>
+         </div>
+         <div class="checkbox">
+          <label class="checkbox">
+           <input name="q_19" type="checkbox" value="Go  and  see  a  dentist  for the extraction  of the tooth"/>
+           Go  and  see  a  dentist  for the extraction  of the tooth
+          </label>
+         </div>
+         <div class="checkbox">
+          <label class="checkbox">
+           <input name="q_19" type="checkbox" value="Brush  teeth  more  often  when  having  pain"/>
+           Brush  teeth  more  often  when  having  pain
+          </label>
+         </div>
+         <div class="checkbox">
+          <label class="checkbox">
+           <input name="q_19" type="checkbox" value="Take pills for pain relief and hope for the best"/>
+           Take pills for pain relief and hope for the best
+          </label>
+         </div>
+         <div class="checkbox">
+          <label class="checkbox">
+           <input name="q_19" type="checkbox" value="Go and see a dentist immediately for filling"/>
+           Go and see a dentist immediately for filling
+          </label>
+         </div>
+         <span class="help-block" id="hint_q_19">
+          Check all that apply
+         </span>
+        </div>
+       </div>
+       <div class="form-group ">
+        <label class="control-label ">
+         Do you have the following daily habits
+        </label>
+        <div class=" ">
+         <div class="checkbox">
+          <label class="checkbox">
+           <input name="q_20" type="checkbox" value="Drink tea"/>
+           Drink tea
+          </label>
+         </div>
+         <div class="checkbox">
+          <label class="checkbox">
+           <input name="q_20" type="checkbox" value="Drink alcohol"/>
+           Drink alcohol
+          </label>
+         </div>
+         <div class="checkbox">
+          <label class="checkbox">
+           <input name="q_20" type="checkbox" value="Drink fizzy drinks"/>
+           Drink fizzy drinks
+          </label>
+         </div>
+         <div class="checkbox">
+          <label class="checkbox">
+           <input name="q_20" type="checkbox" value="Smoking cigarettes"/>
+           Smoking cigarettes
+          </label>
+         </div>
+         <div class="checkbox">
+          <label class="checkbox">
+           <input name="q_20" type="checkbox" value="Chewing tobacco"/>
+           Chewing tobacco
+          </label>
+         </div>
+        </div>
+       </div>
+   
+
+
+<br>
+<br>
+    
+<footer>
+        <div class="form-group">
+          <div>
+           <button class="btn btn-primary " name="submit" type="submit">
+            SAVE
+           </button>
+          </div>
+         </div>
+        </form>
+       </div>
+      </div>
+     </div>
+    </div>
+    </div>
+      </footer>
+    
+
+
+
+
+
+
+
+{% endblock%}

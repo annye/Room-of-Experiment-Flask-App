@@ -1,0 +1,334 @@
+
+
+ 
+{% extends "layout.html" %}
+{% block content %}
+{% if session.username %}
+
+
+    <form action="{{ url_for('add_odontophobia') }}" method="post">
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<h6>I would like you to show me how relaxed or worried you get about the dentist and what happens at the dentist.</h6><br>
+
+  </h4>
+
+ <!-- Grid column -->
+
+<h3>How do you feel about…</h3>
+
+    <!-- Grid column -->
+    <div class="col-md-6" style="background-color:#fafaff" >
+        <br>
+        <br>
+        <br>
+  <br>
+            <label class="statement">Going to visit the dentist?</label>
+            <p><strong>1 is good, 5 is bad</strong></p>
+            <ul class='likert'>
+              <li>
+                <input type="radio" name="f1" value="1" required>
+                <label>1</label>
+              </li>
+              <li>
+                <input type="radio" name="f1" value="2" required>
+                <label>2</label>
+              </li>
+              <li>
+                <input type="radio" name="f1" value="3" required>
+                <label>3</label>
+              </li>
+              <li>
+                <input type="radio" name="f1" value="4" required>
+                <label>4</label>
+              </li>
+              <li>
+                <input type="radio" name="f1" value="5" required>
+                <label>5</label>
+              </li>
+            </ul>
+            <label class="statement">You feel like crying when you think of going to the dentist?.</label>
+            <p><strong>1 is good, 5 is bad</strong></p>
+            <ul class='likert'>
+              <li>
+                <input type="radio" name="f2" value="1"required>
+                <label>1</label>
+              </li>
+              <li>
+                <input type="radio" name="f2" value="2"required>
+                <label>2</label>
+              </li>
+              <li>
+                <input type="radio" name="f2" value="3"required>
+                <label>3</label>
+              </li>
+              <li>
+                <input type="radio" name="f2" value="4"required>
+                <label>4</label>
+              </li>
+              <li>
+                <input type="radio" name="f2" value="5"required>
+                <label>5</label>
+              </li>
+            </ul>
+
+            <label class="statement">Having your teeth looked at.</label>
+            <p><strong>1 is good, 5 is bad</strong></p>
+            <ul class='likert'>
+              <li>
+                <input type="radio" name=f3 value="1"required>
+                <label>1</label>
+              </li>
+              <li>
+                <input type="radio" name="f3" value="2"required>
+                <label>2</label>
+              </li>
+              <li>
+                <input type="radio" name="f3" value="3"required>
+                <label>3</label>
+              </li>
+              <li>
+                <input type="radio" name="f3" value="4"required>
+                <label>4</label>
+              </li>
+              <li>
+                <input type="radio" name="f3" value="5"required>
+                <label>5</label>
+              </li>
+            </ul>
+          
+      
+        
+             <label class="statement">Having your teeth cleaned and polished?</label>
+             <p><strong>1 is good, 5 is bad</strong></p>
+            <ul class='likert'>
+              <li>
+                <input type="radio" name="f4" value="1"required>
+                <label>1</label>
+              </li>
+              <li>
+                <input type="radio" name="f4" value="2"required>
+                <label>2</label>
+              </li>
+              <li>
+                <input type="radio" name="f4" value="3"required>
+                <label>3</label>
+              </li>
+              <li>
+                <input type="radio" name="f4" value="4"required>
+                <label>4</label>
+              </li>
+              <li>
+                <input type="radio" name="f4" value="5"required>
+                <label>5</label>
+              </li>
+            </ul>
+              <label class="statement">Having an injection in the gum?</label>
+              <p><strong>1 is good, 5 is bad</strong></p>
+            <ul class='likert'>
+              <li>
+                <input type="radio" name="f5" value="1"required>
+                <label>1</label>
+              </li>
+              <li>
+                <input type="radio" name="f5" value="2"required>
+                <label>2</label>
+              </li>
+              <li>
+                <input type="radio" name="f5" value="3"required>
+                <label>3</label>
+              </li>
+              <li>
+                <input type="radio" name="f5" value="4"required>
+                <label>4</label>
+              </li>
+              <li>
+                <input type="radio" name="f5" value="5"required>
+                <label>5</label>
+              </li>
+            </ul>
+            <br>
+            <br>
+           
+            
+            <br>
+            
+          </div>
+          
+   <!-- Grid column -->
+   <div class="col-md-6" style="background-color:#fafaff">
+      <br>
+      <br>
+      <br>
+<br>
+              <label class="statement">Having a filling?</label>
+              <p><strong>1 is good, 5 is bad</strong></p>
+            <ul class='likert'>
+              <li>
+                <input type="radio" name="f6" value="1"required>
+                <label>1</label>
+              </li>
+              <li>
+                <input type="radio" name="f6" value="2"required>
+                <label>2</label>
+              </li>
+              <li>
+                <input type="radio" name="f6" value="3"required>
+                <label>3</label>
+              </li>
+              <li>
+                <input type="radio" name="f6" value="4"required>
+                <label>4</label>
+              </li>
+              <li>
+                <input type="radio" name="f6" value="5"required>
+                <label>5</label>
+              </li>
+            </ul>
+              <label class="statement">Having a tooth taken out</label>
+              <p><strong>1 is good, 5 is bad</strong></p>
+            <ul class='likert'>
+              <li>
+                <input type="radio" name="f7" value="1"required>
+                <label>1</label>
+              </li>
+              <li>
+                <input type="radio" name="f7" value="2"required>
+                <label>2</label>
+              </li>
+              <li>
+                <input type="radio" name="f7" value="3"required>
+                <label>3</label>
+              </li>
+              <li>
+                <input type="radio" name="f7" value="4"required>
+                <label>4</label>
+              </li>
+              <li>
+                <input type="radio" name="f7" value="5"required>
+                <label>5</label>
+              </li>
+            </ul>
+
+       
+              <label class="statement">I don't like feeling confined or not in control</label>
+              <p><strong>1 is good, 5 is bad</strong></p>
+            <ul class='likert'>
+              <li>
+                <input type="radio" name="f8" value="1"required>
+                <label>1</label>
+              </li>
+              <li>
+                <input type="radio" name="f8" value="2"required>
+                <label>2</label>
+              </li>
+              <li>
+                <input type="radio" name="f8" value="3"required>
+                <label>3</label>
+              </li>
+              <li>
+                <input type="radio" name="f8" value="4"required>
+                <label>4</label>
+              </li>
+              <li>
+                <input type="radio" name="f8" value="5"required>
+                <label>5</label>
+              </li>
+            </ul>
+              <label class="statement">I am embarrassed about the condition of my mouth </label>
+             <p><strong>1 is good, 5 is bad</strong></p>
+            <ul class='likert'>
+              <li>
+                <input type="radio" name="f9" value="1"required>
+                <label>1</label>
+              </li>
+              <li>
+                <input type="radio" name="f9" value="2"required>
+                <label>2</label>
+              </li>
+              <li>
+                <input type="radio" name="f9" value="3"required>
+                <label>3</label>
+              </li>
+              <li>
+                <input type="radio" name="f9" value="4"required>
+                <label>4</label>
+              </li>
+              <li>
+                <input type="radio" name="f9" value="5"required>
+                <label>5</label>
+              </li>
+            </ul>
+              <label class="statement">You panic or have trouble breathing when objects are placed in your mouth during a dental appointment?</label>
+              <p><strong>1 is good, 5 is bad</strong></p>
+            <ul class='likert'>
+              <li>
+                <input type="radio" name="f10" value="1"required>
+                <label>1</label>
+              </li>
+              <li>
+                <input type="radio" name="f10" value="2"required>
+                <label>2</label>
+              </li>
+              <li>
+                <input type="radio" name="f10" value="3"required>
+                <label>3</label>
+              </li>
+              <li>
+                <input type="radio" name="f10" value="4"required>
+                <label>4</label>
+              </li>
+              <li>
+                <input type="radio" name="f10" value="5"required>
+                <label>5</label>
+              </li>
+            </ul>
+            
+             
+        
+            <br>
+            <br>
+  
+
+       
+          </div>
+
+
+          <footer>
+              <div class="form-group">
+                <div>
+                 <button class="btn btn-primary " name="submit" type="submit">
+                  SAVE
+                 </button>
+                </div>
+               </div>
+              </form>
+             </div>
+            </div>
+           </div>
+          </div>
+          </div>
+            </footer>
+        </form>
+      </div>
+      <br>
+      <br>
+      
+      <br>
+            <br>
+            
+            <br>
+            <br>
+   
+    
+            
+           
+    {% endif %}
+
+{% endblock %}
+

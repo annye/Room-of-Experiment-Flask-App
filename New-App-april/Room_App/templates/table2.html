@@ -1,0 +1,183 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+<br>
+<br>
+<br>
+<div class="wrapper">
+§ <form action="{{ url_for('add_table_2') }}" method="post">
+        <h4>Check-ups Occasionally </h4>
+       
+    </div>
+
+    <table class="blueTable">
+            <thead>
+            <tr>
+            <th>Statements</th>
+            <th>Ratings</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+          <td>
+        Besides regular checkups, there may be times when you will need to visit your dentist for other reasons. Any pain or symptoms that appear suddenly, such as tooth sensitivity, pain when chewing or swelling in the face, should be checked out by your dentist.
+         </td>
+         <td>  <div class="form-group ">
+                        <label class="control-label " for="select">
+                                
+                    
+                        <select class="select form-control" id="r_1" name="r_1"required>
+                         <option value="1">
+                        1
+                         </option>
+                         <option value="2">
+                        2
+                         </option>
+                         <option value="3">
+                        3
+                        </option>
+                        <option value="4">
+                        4
+                        </option>
+                        <option value="5">
+                        5
+                        </option></td>
+            </tr>
+            <tr>
+            <td>
+                        Most people find it best to go to the dentist before the need for a root canal happens. Root canal treatment can be hurtful and expensive, a regular  Twice-Yearly Dental cleaning is recommended.
+          <td>
+                    <div class="form-group ">
+                            <label class="control-label " for="select">
+                                    
+                        
+                            <select class="select form-control" id="r_2" name="r_2"required>
+                             <option value="1">
+                            1
+                             </option>
+                             <option value="2">
+                            2
+                             </option>
+                             <option value="3">
+                            3
+                            </option>
+                            <option value="4">
+                            4
+                            </option>
+                            <option value="5">
+                            5
+                            </option>
+            </td>
+            </tr>
+            <tr>
+            <td>
+               The physical and psychological effects of tooth loss can be hugely damaging to a person’s overall well-being,  For complete care, it’s important to visit a dentist every six months for a regular checkup and professional cleaning.
+
+            </td>
+            <td> <div class="form-group ">
+                    <label class="control-label " for="select">
+                            
+                
+                    <select class="select form-control" id="r_3" name="r_3"required>
+                     <option value="1">
+                    1
+                     </option>
+                     <option value="2">
+                    2
+                     </option>
+                     <option value="3">
+                    3
+                    </option>
+                    <option value="4">
+                    4
+                    </option>
+                    <option value="5">
+                    5
+                    </option>
+
+            </td>
+            </tr>
+            <tr>
+            <td>You are doing well, better than the vast majority of people,but The doctor recommend to visit twice a year 
+         </td>
+            <td> <div class="form-group ">
+                    <label class="control-label " for="select">
+                            
+                
+                    <select class="select form-control" id="r_4" name="r_4"required>
+                     <option value="1">
+                    1
+                     </option>
+                     <option value="2">
+                    2
+                     </option>
+                     <option value="3">
+                    3
+                    </option>
+                    <option value="4">
+                    4
+                    </option>
+                    <option value="5">
+                    5
+                    </option></td>
+            </tr>
+            <tr>
+            <td>You may have great teeth because you're so faithful in keeping your regular dental appointments. Dont hesitate to visit your dentist for a professional cleaning
+                </td>
+            <td>
+                    <div class="form-group ">
+                            <label class="control-label " for="select">
+                                    
+                        
+                            <select class="select form-control" id="r_5" name="r_5"required>
+                             <option value="1">
+                            1
+                             </option>
+                             <option value="2">
+                            2
+                             </option>
+                             <option value="3">
+                            3
+                            </option>
+                            <option value="4">
+                            4
+                            </option>
+                            <option value="5">
+                            5
+                            </option>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            <footer>
+                        <div class="form-group">
+                          <div>
+                           <button class="btn btn-primary " name="submit" type="submit">
+                            SAVE
+                           </button>
+                          </div>
+                         </div>
+                        </form>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    </div>
+                      </footer>
+
+            <A HREF="javascript:javascript:history.go(-1)">Click here to go back to previous page</A>
+
+
+
+
+
+
+
+
+
+
+
+{%endblock%}

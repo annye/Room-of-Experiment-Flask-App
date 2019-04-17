@@ -1,0 +1,421 @@
+
+
+ 
+{% extends "layout.html" %}
+{% block content %}
+{% if session.username %}
+
+<div class="wrapper">
+<form action="{{ url_for('add_odontophobia') }}" method="post">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h4align=left>I would like you to show me how relaxed or worried you get about the dentist and what happens at the dentist.</h4>
+  
+ <!-- Grid column -->
+ <div class="col-md-10" style="background-color:#818083">
+<h3>How do you feel about…</h3>
+
+   
+    <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <p class="page-header">1 is good, 10 is bad (Going to visit the dentist?)</p>
+            <div class="chart-scale">
+                    <form action="">
+                            <input type="radio" name="f1" value="1"required > 1
+                            <button class="btn btn-scale btn-scale-asc-1"></button>
+                              <input type="radio" name="f2" value="1"> 2
+                            <button class="btn btn-scale btn-scale-asc-2"></button>
+                            <input type="radio" name="f1" value="1"required > 3
+                            <button class="btn btn-scale btn-scale-asc-3"></button>
+                            <input type="radio" name="f1" value="1" required > 4
+                            <button class="btn btn-scale btn-scale-asc-4"></button>
+                            <input type="radio" name="f1" value="1"required > 5
+                            <button class="btn btn-scale btn-scale-asc-5"></button>
+                            <input type="radio" name="f1" value="1" required > 6
+                            <button class="btn btn-scale btn-scale-asc-6"></button>
+                            <input type="radio" name="f1" value="1" required > 7
+                            <button class="btn btn-scale btn-scale-asc-7"></button>
+                            <input type="radio" name="f1" value="1" required> 8
+                            <button class="btn btn-scale btn-scale-asc-8"></button>
+                            <input type="radio" name="f1" value="1"> 9
+                            <button class="btn btn-scale btn-scale-asc-9"></button>
+                            <input type="radio" name="f1" value="1"required> 10
+                            <button class="btn btn-scale btn-scale-asc-10"></button>
+                            <hr/>
+              
+              <p class="page-header">1 is good, 10 is bad (You feel like crying when you think of going to the dentist?)</p>
+              <div class="chart-scale">
+                    <form action="">
+                            <input type="radio" name="f1" value="1"required > 1
+                            <button class="btn btn-scale btn-scale-asc-1"></button>
+                              <input type="radio" name="f2" value="1"> 2
+                            <button class="btn btn-scale btn-scale-asc-2"></button>
+                            <input type="radio" name="f1" value="1"required > 3
+                            <button class="btn btn-scale btn-scale-asc-3"></button>
+                            <input type="radio" name="f1" value="1" required > 4
+                            <button class="btn btn-scale btn-scale-asc-4"></button>
+                            <input type="radio" name="f1" value="1"required > 5
+                            <button class="btn btn-scale btn-scale-asc-5"></button>
+                            <input type="radio" name="f1" value="1" required > 6
+                            <button class="btn btn-scale btn-scale-asc-6"></button>
+                            <input type="radio" name="f1" value="1" required > 7
+                            <button class="btn btn-scale btn-scale-asc-7"></button>
+                            <input type="radio" name="f1" value="1" required> 8
+                            <button class="btn btn-scale btn-scale-asc-8"></button>
+                            <input type="radio" name="f1" value="1"> 9
+                            <button class="btn btn-scale btn-scale-asc-9"></button>
+                            <input type="radio" name="f1" value="1"required> 10
+                            <button class="btn btn-scale btn-scale-asc-10"></button>
+                            <hr/>
+              
+
+      
+      
+         
+              <p class="page-header">1 is good, 10 is bad (Having your teeth looked at?)</p>
+              <div class="chart-scale">
+                    <form action="">
+                            <input type="radio" name="f1" value="1"required > 1
+                            <button class="btn btn-scale btn-scale-asc-1"></button>
+                              <input type="radio" name="f2" value="1"> 2
+                            <button class="btn btn-scale btn-scale-asc-2"></button>
+                            <input type="radio" name="f1" value="1"required > 3
+                            <button class="btn btn-scale btn-scale-asc-3"></button>
+                            <input type="radio" name="f1" value="1" required > 4
+                            <button class="btn btn-scale btn-scale-asc-4"></button>
+                            <input type="radio" name="f1" value="1"required > 5
+                            <button class="btn btn-scale btn-scale-asc-5"></button>
+                            <input type="radio" name="f1" value="1" required > 6
+                            <button class="btn btn-scale btn-scale-asc-6"></button>
+                            <input type="radio" name="f1" value="1" required > 7
+                            <button class="btn btn-scale btn-scale-asc-7"></button>
+                            <input type="radio" name="f1" value="1" required> 8
+                            <button class="btn btn-scale btn-scale-asc-8"></button>
+                            <input type="radio" name="f1" value="1"> 9
+                            <button class="btn btn-scale btn-scale-asc-9"></button>
+                            <input type="radio" name="f1" value="1"required> 10
+                            <button class="btn btn-scale btn-scale-asc-10"></button>
+                            <hr/>
+              
+
+                <p class="page-header">1 is good, 10 is bad (Having your teeth cleaned and polished? 
+                    )</p>
+                <div class="chart-scale">
+                        <form action="">
+                                <input type="radio" name="f1" value="1"required > 1
+                                <button class="btn btn-scale btn-scale-asc-1"></button>
+                                  <input type="radio" name="f2" value="1"> 2
+                                <button class="btn btn-scale btn-scale-asc-2"></button>
+                                <input type="radio" name="f1" value="1"required > 3
+                                <button class="btn btn-scale btn-scale-asc-3"></button>
+                                <input type="radio" name="f1" value="1" required > 4
+                                <button class="btn btn-scale btn-scale-asc-4"></button>
+                                <input type="radio" name="f1" value="1"required > 5
+                                <button class="btn btn-scale btn-scale-asc-5"></button>
+                                <input type="radio" name="f1" value="1" required > 6
+                                <button class="btn btn-scale btn-scale-asc-6"></button>
+                                <input type="radio" name="f1" value="1" required > 7
+                                <button class="btn btn-scale btn-scale-asc-7"></button>
+                                <input type="radio" name="f1" value="1" required> 8
+                                <button class="btn btn-scale btn-scale-asc-8"></button>
+                                <input type="radio" name="f1" value="1"> 9
+                                <button class="btn btn-scale btn-scale-asc-9"></button>
+                                <input type="radio" name="f1" value="1"required> 10
+                                <button class="btn btn-scale btn-scale-asc-10"></button>
+                                <hr/>
+                  
+
+                  <p class="page-header">1 is good, 10 is bad (Having an injection in the gum?)</p>
+                  <div class="chart-scale">
+                        <form action="">
+                                <input type="radio" name="f1" value="1"required > 1
+                                <button class="btn btn-scale btn-scale-asc-1"></button>
+                                  <input type="radio" name="f2" value="1"> 2
+                                <button class="btn btn-scale btn-scale-asc-2"></button>
+                                <input type="radio" name="f1" value="1"required > 3
+                                <button class="btn btn-scale btn-scale-asc-3"></button>
+                                <input type="radio" name="f1" value="1" required > 4
+                                <button class="btn btn-scale btn-scale-asc-4"></button>
+                                <input type="radio" name="f1" value="1"required > 5
+                                <button class="btn btn-scale btn-scale-asc-5"></button>
+                                <input type="radio" name="f1" value="1" required > 6
+                                <button class="btn btn-scale btn-scale-asc-6"></button>
+                                <input type="radio" name="f1" value="1" required > 7
+                                <button class="btn btn-scale btn-scale-asc-7"></button>
+                                <input type="radio" name="f1" value="1" required> 8
+                                <button class="btn btn-scale btn-scale-asc-8"></button>
+                                <input type="radio" name="f1" value="1"> 9
+                                <button class="btn btn-scale btn-scale-asc-9"></button>
+                                <input type="radio" name="f1" value="1"required> 10
+                                <button class="btn btn-scale btn-scale-asc-10"></button>
+                                <hr/>
+                  
+
+
+                    <p class="page-header">1 is good, 10 is bad (Having a filling?)</p>
+                    <div class="chart-scale">
+                  
+                            <form action="">
+                                    <input type="radio" name="f1" value="1"required > 1
+                                    <button class="btn btn-scale btn-scale-asc-1"></button>
+                                      <input type="radio" name="f2" value="1"> 2
+                                    <button class="btn btn-scale btn-scale-asc-2"></button>
+                                    <input type="radio" name="f1" value="1"required > 3
+                                    <button class="btn btn-scale btn-scale-asc-3"></button>
+                                    <input type="radio" name="f1" value="1" required > 4
+                                    <button class="btn btn-scale btn-scale-asc-4"></button>
+                                    <input type="radio" name="f1" value="1"required > 5
+                                    <button class="btn btn-scale btn-scale-asc-5"></button>
+                                    <input type="radio" name="f1" value="1" required > 6
+                                    <button class="btn btn-scale btn-scale-asc-6"></button>
+                                    <input type="radio" name="f1" value="1" required > 7
+                                    <button class="btn btn-scale btn-scale-asc-7"></button>
+                                    <input type="radio" name="f1" value="1" required> 8
+                                    <button class="btn btn-scale btn-scale-asc-8"></button>
+                                    <input type="radio" name="f1" value="1"> 9
+                                    <button class="btn btn-scale btn-scale-asc-9"></button>
+                                    <input type="radio" name="f1" value="1"required> 10
+                                    <button class="btn btn-scale btn-scale-asc-10"></button>
+                                    <hr/>
+                      
+
+                      <p class="page-header">1 is good, 10 is bad (Having a tooth taken out?)</p>
+                      <div class="chart-scale">
+                            <form action="">
+                                    <input type="radio" name="f1" value="1"required > 1
+                                    <button class="btn btn-scale btn-scale-asc-1"></button>
+                                      <input type="radio" name="f2" value="1"> 2
+                                    <button class="btn btn-scale btn-scale-asc-2"></button>
+                                    <input type="radio" name="f1" value="1"required > 3
+                                    <button class="btn btn-scale btn-scale-asc-3"></button>
+                                    <input type="radio" name="f1" value="1" required > 4
+                                    <button class="btn btn-scale btn-scale-asc-4"></button>
+                                    <input type="radio" name="f1" value="1"required > 5
+                                    <button class="btn btn-scale btn-scale-asc-5"></button>
+                                    <input type="radio" name="f1" value="1" required > 6
+                                    <button class="btn btn-scale btn-scale-asc-6"></button>
+                                    <input type="radio" name="f1" value="1" required > 7
+                                    <button class="btn btn-scale btn-scale-asc-7"></button>
+                                    <input type="radio" name="f1" value="1" required> 8
+                                    <button class="btn btn-scale btn-scale-asc-8"></button>
+                                    <input type="radio" name="f1" value="1"> 9
+                                    <button class="btn btn-scale btn-scale-asc-9"></button>
+                                    <input type="radio" name="f1" value="1"required> 10
+                                    <button class="btn btn-scale btn-scale-asc-10"></button>
+                                    <hr/>
+                      
+                      
+
+                        <p class="page-header">1 is good, 10 is bad (You feel tense or have trouble sleeping the night before a dental exam.?)</p>
+                        <div class="chart-scale">
+                            
+                                <form action="">
+                                        <input type="radio" name="f1" value="1"required > 1
+                                        <button class="btn btn-scale btn-scale-asc-1"></button>
+                                          <input type="radio" name="f2" value="1"> 2
+                                        <button class="btn btn-scale btn-scale-asc-2"></button>
+                                        <input type="radio" name="f1" value="1"required > 3
+                                        <button class="btn btn-scale btn-scale-asc-3"></button>
+                                        <input type="radio" name="f1" value="1" required > 4
+                                        <button class="btn btn-scale btn-scale-asc-4"></button>
+                                        <input type="radio" name="f1" value="1"required > 5
+                                        <button class="btn btn-scale btn-scale-asc-5"></button>
+                                        <input type="radio" name="f1" value="1" required > 6
+                                        <button class="btn btn-scale btn-scale-asc-6"></button>
+                                        <input type="radio" name="f1" value="1" required > 7
+                                        <button class="btn btn-scale btn-scale-asc-7"></button>
+                                        <input type="radio" name="f1" value="1" required> 8
+                                        <button class="btn btn-scale btn-scale-asc-8"></button>
+                                        <input type="radio" name="f1" value="1"> 9
+                                        <button class="btn btn-scale btn-scale-asc-9"></button>
+                                        <input type="radio" name="f1" value="1"required> 10
+                                        <button class="btn btn-scale btn-scale-asc-10"></button>
+                                        <hr/>
+                          
+        
+                        
+                        <p class="page-header">1 is good, 10 is bad (You get increasingly nervous while you're in the waiting room.)</p>
+                        <div class="chart-scale">
+
+                                <form action="">
+                                        <input type="radio" name="f1" value="1"required > 1
+                                        <button class="btn btn-scale btn-scale-asc-1"></button>
+                                          <input type="radio" name="f2" value="1"> 2
+                                        <button class="btn btn-scale btn-scale-asc-2"></button>
+                                        <input type="radio" name="f1" value="1"required > 3
+                                        <button class="btn btn-scale btn-scale-asc-3"></button>
+                                        <input type="radio" name="f1" value="1" required > 4
+                                        <button class="btn btn-scale btn-scale-asc-4"></button>
+                                        <input type="radio" name="f1" value="1"required > 5
+                                        <button class="btn btn-scale btn-scale-asc-5"></button>
+                                        <input type="radio" name="f1" value="1" required > 6
+                                        <button class="btn btn-scale btn-scale-asc-6"></button>
+                                        <input type="radio" name="f1" value="1" required > 7
+                                        <button class="btn btn-scale btn-scale-asc-7"></button>
+                                        <input type="radio" name="f1" value="1" required> 8
+                                        <button class="btn btn-scale btn-scale-asc-8"></button>
+                                        <input type="radio" name="f1" value="1"> 9
+                                        <button class="btn btn-scale btn-scale-asc-9"></button>
+                                        <input type="radio" name="f1" value="1"required> 10
+                                        <button class="btn btn-scale btn-scale-asc-10"></button>
+                                        <hr/>
+                          
+        
+
+
+                        <p class="page-header">1 is good, 10 is bad (The thought of a dental visit makes you feel physically ill?)</p>
+                        <div class="chart-scale">
+
+                                <form action="">
+                                        <input type="radio" name="f1" value="1"required > 1
+                                        <button class="btn btn-scale btn-scale-asc-1"></button>
+                                          <input type="radio" name="f2" value="1"> 2
+                                        <button class="btn btn-scale btn-scale-asc-2"></button>
+                                        <input type="radio" name="f1" value="1"required > 3
+                                        <button class="btn btn-scale btn-scale-asc-3"></button>
+                                        <input type="radio" name="f1" value="1" required > 4
+                                        <button class="btn btn-scale btn-scale-asc-4"></button>
+                                        <input type="radio" name="f1" value="1"required > 5
+                                        <button class="btn btn-scale btn-scale-asc-5"></button>
+                                        <input type="radio" name="f1" value="1" required > 6
+                                        <button class="btn btn-scale btn-scale-asc-6"></button>
+                                        <input type="radio" name="f1" value="1" required > 7
+                                        <button class="btn btn-scale btn-scale-asc-7"></button>
+                                        <input type="radio" name="f1" value="1" required> 8
+                                        <button class="btn btn-scale btn-scale-asc-8"></button>
+                                        <input type="radio" name="f1" value="1"> 9
+                                        <button class="btn btn-scale btn-scale-asc-9"></button>
+                                        <input type="radio" name="f1" value="1"required> 10
+                                        <button class="btn btn-scale btn-scale-asc-10"></button>
+                                        <hr/>
+                          
+        
+
+                        
+                        <p class="page-header">1 is good, 10 is bad (You panic or have trouble breathing when objects are placed in your mouth during a dental appointment?)</p>
+                        <div class="chart-scale">
+
+                                <form action="">
+                                        <input type="radio" name="f1" value="1"required > 1
+                                        <button class="btn btn-scale btn-scale-asc-1"></button>
+                                          <input type="radio" name="f2" value="1"> 2
+                                        <button class="btn btn-scale btn-scale-asc-2"></button>
+                                        <input type="radio" name="f1" value="1"required > 3
+                                        <button class="btn btn-scale btn-scale-asc-3"></button>
+                                        <input type="radio" name="f1" value="1" required > 4
+                                        <button class="btn btn-scale btn-scale-asc-4"></button>
+                                        <input type="radio" name="f1" value="1"required > 5
+                                        <button class="btn btn-scale btn-scale-asc-5"></button>
+                                        <input type="radio" name="f1" value="1" required > 6
+                                        <button class="btn btn-scale btn-scale-asc-6"></button>
+                                        <input type="radio" name="f1" value="1" required > 7
+                                        <button class="btn btn-scale btn-scale-asc-7"></button>
+                                        <input type="radio" name="f1" value="1" required> 8
+                                        <button class="btn btn-scale btn-scale-asc-8"></button>
+                                        <input type="radio" name="f1" value="1"> 9
+                                        <button class="btn btn-scale btn-scale-asc-9"></button>
+                                        <input type="radio" name="f1" value="1"required> 10
+                                        <button class="btn btn-scale btn-scale-asc-10"></button>
+                                        <hr/>
+                          
+
+                        
+                        <p class="page-header">1 is good, 10 is bad (I am embarrassed about the condition of my mouth)</p>
+                        <div class="chart-scale">
+                                <form action="">
+                                        <input type="radio" name="f1" value="1"required > 1
+                                        <button class="btn btn-scale btn-scale-asc-1"></button>
+                                          <input type="radio" name="f2" value="1"> 2
+                                        <button class="btn btn-scale btn-scale-asc-2"></button>
+                                        <input type="radio" name="f1" value="1"required > 3
+                                        <button class="btn btn-scale btn-scale-asc-3"></button>
+                                        <input type="radio" name="f1" value="1" required > 4
+                                        <button class="btn btn-scale btn-scale-asc-4"></button>
+                                        <input type="radio" name="f1" value="1"required > 5
+                                        <button class="btn btn-scale btn-scale-asc-5"></button>
+                                        <input type="radio" name="f1" value="1" required > 6
+                                        <button class="btn btn-scale btn-scale-asc-6"></button>
+                                        <input type="radio" name="f1" value="1" required > 7
+                                        <button class="btn btn-scale btn-scale-asc-7"></button>
+                                        <input type="radio" name="f1" value="1" required> 8
+                                        <button class="btn btn-scale btn-scale-asc-8"></button>
+                                        <input type="radio" name="f1" value="1"> 9
+                                        <button class="btn btn-scale btn-scale-asc-9"></button>
+                                        <input type="radio" name="f1" value="1"required> 10
+                                        <button class="btn btn-scale btn-scale-asc-10"></button>
+                                        <hr/>
+                          
+
+
+                            
+        
+                    
+                
+                        <p class="page-header">1 is good, 10 is bad(I don't like feeling confined or not in control)</p>
+                        <div class="chart-scale">
+                                <form action="">
+                                        <input type="radio" name="f1" value="1"required > 1
+                                        <button class="btn btn-scale btn-scale-asc-1"></button>
+                                          <input type="radio" name="f2" value="1"> 2
+                                        <button class="btn btn-scale btn-scale-asc-2"></button>
+                                        <input type="radio" name="f1" value="1"required > 3
+                                        <button class="btn btn-scale btn-scale-asc-3"></button>
+                                        <input type="radio" name="f1" value="1" required > 4
+                                        <button class="btn btn-scale btn-scale-asc-4"></button>
+                                        <input type="radio" name="f1" value="1"required > 5
+                                        <button class="btn btn-scale btn-scale-asc-5"></button>
+                                        <input type="radio" name="f1" value="1" required > 6
+                                        <button class="btn btn-scale btn-scale-asc-6"></button>
+                                        <input type="radio" name="f1" value="1" required > 7
+                                        <button class="btn btn-scale btn-scale-asc-7"></button>
+                                        <input type="radio" name="f1" value="1" required> 8
+                                        <button class="btn btn-scale btn-scale-asc-8"></button>
+                                        <input type="radio" name="f1" value="1"> 9
+                                        <button class="btn btn-scale btn-scale-asc-9"></button>
+                                        <input type="radio" name="f1" value="1"required> 10
+                                        <button class="btn btn-scale btn-scale-asc-10"></button>
+                                        <hr/>
+                          
+        
+                      
+
+  
+                            <footer>
+                                    <div class="form-group">
+                                      <div>
+                                       <button class="btn btn-primary " name="submit" type="submit">
+                                        SAVE
+                                       </button>
+                                      </div>
+                                     </div>
+                                    </form>
+                                   </div>
+                                  </div>
+                                 </div>
+                                </div>
+                                </div>
+         </form>
+                                  </footer>
+                                
+                                
+              
+            </div>
+          </div>
+        </div>
+
+
+
+        <br>
+        
+      
+      {% endif %}
+
+
+{% endblock %}

@@ -70,7 +70,7 @@ ptyprocess==0.6.0
 public==2018.11.20
 py2neo==4.2.0
 pycparser==2.19
-Pygments==2.3.0
+Pygments==2.7.4
 pylint==2.2.2
 pymongo==3.7.2
 pyOpenSSL==19.0.0
